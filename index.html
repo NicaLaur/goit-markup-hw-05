@@ -22,7 +22,10 @@
 
         <nav class="main-navigation">
             <ul>
-                <li><a class="nav-link" id="current" href="index.html">Studio</a></li>
+                <li class="li-nav-link">
+                    <a class="nav-link" id="current" href="index.html">Studio </a> 
+                  
+                </li>
                 <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                 <li><a class="nav-link" href="#">Contacts</a></li>
             </ul>
@@ -62,7 +65,7 @@
     <section class="about-section">
     <div class="dark-section">
             <h1>EFFECTIVE SOLUTIONS FOR <br> YOUR BUSINESS</h1>
-            <button class="main-button" type="button">Request our servicez</button>
+            <button class="main-button" type="button" data-modal-open>Request our servicez</button>
     </div>
     <div class="container container-about-section-list">
         <ul class="about-section-list">
@@ -111,9 +114,18 @@
       
             <h2>What we do</h2>
             <ul>
-                <li><img src="./images/img1.jpg" alt="coding" width="370"></li>
-                <li><img src="./images/img2.jpg" alt="mobile aplication" width="370"></li>
-                <li><img src="./images/img3.jpg" alt="designe aplication" width="370"></li>
+                <li class="li-what-we-do">
+                    <img src="./images/img1.jpg"  alt="coding" width="370">
+                    <p class="label-img">DESKTOP APPS</p>
+                </li>
+                <li class="li-what-we-do">
+                    <img src="./images/img2.jpg" alt="mobile aplication" width="370">
+                    <p class="label-img">MOBILE APPS</p>
+                </li>
+                <li class="li-what-we-do">
+                    <img src="./images/img3.jpg" alt="designe aplication" width="370">
+                    <p class="label-img">DESIGN SOLUTIONS</p>
+                </li>
             
             </ul>
 
@@ -364,6 +376,16 @@
     
 </footer>
 
-        
+<!--Modal Request our servicez -->
+<div class="modal is-hidden" data-modal>
+    
+        <div class="modal-content">
+            <button class="close-btn" data-modal-close>X</button>
+        </div>
+    
+    
+</div>
+
+        <script src="./js/modal.js"></script>
 </body>
 </html>
